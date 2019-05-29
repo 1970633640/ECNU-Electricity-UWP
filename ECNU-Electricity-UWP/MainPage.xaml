@@ -9,6 +9,52 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <SplitView Name="split1" HorizontalAlignment="Stretch" OpenPaneLength="256" VerticalAlignment="Stretch" PanePlacement="Right">
+            <SplitView.Pane>
+                <Grid Margin="24,24,24,24">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="设置" Margin="0,12,0,0" Style="{ThemeResource TitleTextBlockStyle}" HorizontalAlignment="Stretch"/>
+                    <ComboBox Name="campus"  Header="校区" Margin="0,24,0,0" PlaceholderText="选择校区" Grid.Row="1" HorizontalAlignment="Stretch">
+                        <x:String>中北校区</x:String>
+                        <x:String>闵行校区</x:String>
+                        <x:String>同普路</x:String>
+                    </ComboBox>
+                    <TextBox Name="room" Header="房间号:" PlaceholderText="5101" Margin="0,12,0,0"  Grid.Row="2" HorizontalAlignment="Stretch" />
+                    <TextBlock Text="例如5舍101是5101，10舍201是10201" Margin="0,12,0,0" Style="{ThemeResource CaptionTextBlockStyle}" HorizontalAlignment="Stretch"  Grid.Row="3"/>
+                    <Button Name="button2" Content="保存" Grid.Row="4" Margin="0,24,0,0" HorizontalAlignment="Stretch" Click="Button2_Click"/>
+                </Grid>
+
+            </SplitView.Pane>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="房间号" Margin="0,50,0,0" Style="{ThemeResource HeaderTextBlockStyle}" Grid.Column="1" HorizontalAlignment="Stretch" TextAlignment="Center"/>
+                <TextBlock Name="text2" Text="-度" Margin="0,0,0,0" Style="{ThemeResource HeaderTextBlockStyle}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" FontWeight="Bold" TextAlignment="Center"/>
+                <AppBarButton Name="button1" Label="设置" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Grid.Column="2" Grid.Row="2" Margin="0,0,0,0" Click="Button1_Click">
+                    <AppBarButton.Icon>
+                        <SymbolIcon Symbol="Setting"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+            </Grid>
+
+        </SplitView>
+
 
     </Grid>
+
 </Page>

@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="89ebfde6-35e0-447b-86c5-71141c6d8206"
+    Name="0b61c5d0-69ca-454c-a6ab-a3555ebb4751"
     Publisher="CN=w"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="89ebfde6-35e0-447b-86c5-71141c6d8206" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="0b61c5d0-69ca-454c-a6ab-a3555ebb4751" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>ECNU-Electricity-UWP</DisplayName>
